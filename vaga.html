@@ -33,8 +33,10 @@
         input{
             font-size: 16px;
             height: 100%;
+            width: 100%;
             outline: none;
             border: none;
+            background-color: transparent;
         }
         .containerInput select{
             font-size: 16px;
@@ -85,7 +87,7 @@
 
         <div class="containerInput">
             <label id="labelIdade" >Que dia voçê nasceu?</label>
-            <input type="date" id="idade" placeholder="Que dia voçê nasceu?" onclick="labelDaseble('labelIdade', 'idade')">
+            <input type="date" id="idade" value="2000-01-01" onclick="labelDaseble('labelIdade', 'idade')">
         </div>
 
         
