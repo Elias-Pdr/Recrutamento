@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: #00A650;
+        }
+        header{
+            background-image:  linear-gradient(to bottom, #00A650, #028541);;
+            margin: auto;
+            width: 90%;
+            padding: 30px 10px;
+            color: white; 
+            border-radius: 16px;
+            
+        }
+        header h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header p{
+            font-size: 18px;
+            margin: 10px 20px;
+        }
+
+        ._container{
+            background-color: rgb(214, 214, 214);
+            width: 90%;
+            margin: 30px auto;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgb(141 145 168);;
+        }
+        ._container h1{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+        .container{
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 96%;
+            margin: 10px auto;
+            padding: 10px 0px;
+            border-radius: 10px;
+            border: 1px solid rgb(141 145 168);
+        }
+        .container:hover{
+            background-image:  linear-gradient(to right, #00a65046, white);;
+        }
+
+        .container p{
+            font-size: 20px;
+            margin: 10px 20px;
+            font-weight: 500;
+        }
+        .container img{
+            margin: 10px 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VAGAS ABERTAS PRA PQP!</h1>
+        <p>ATENÇÃO!</p>
+        <p>SUA MÃE CONTRATA COM URGÊNCIA!!!</p>
+        <br>
+        <p><strong>Estamos contratando com ou sem experiência, salário de R$1,00 a R$4,00!</strong></p>
+        
+        <br>
+        <p>São 2 VAGAS para todo Brasil!</p>
+        
+        <br>
+        <p>Apenas par maiores de 16 Anos!</p>
+    </header>
+
+    <main>
+        <div class="_container">
+            <h1>Qual a vaga desejada?</h1>
+            <div class="container" onclick="vaga()">
+                <p>Vaga tal tal tal</p>
+                <img src="img/seta.png" alt="">
+            </div>
+            <div class="container" onclick="vaga()">
+                <p>Vaga tal tal tal</p>
+                <img src="img/seta.png" alt="">
+            </div>
+            <div class="container" onclick="vaga()">
+                <p>Vaga tal tal tal</p>
+                <img src="img/seta.png" alt="">
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        function vaga() {
+            window.location.href = "vaga.html"
+        }
+    </script>
+</body>
+</html>
