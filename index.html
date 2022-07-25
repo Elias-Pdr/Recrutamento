@@ -8,14 +8,16 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
         }
         body{
+            margin-top: 30px;
             background-color: #00A650;
         }
         header{
             background-image:  linear-gradient(to bottom, #00A650, #028541);;
-            margin: auto;
-            width: 90%;
+            margin: 30px auto;
+            max-width: 86%;
             padding: 30px 10px;
             color: white; 
             border-radius: 16px;
@@ -31,17 +33,17 @@
         }
 
         ._container{
-            background-color: rgb(214, 214, 214);
-            width: 90%;
-            margin: 30px auto;
-            padding: 10px;
+            background-color: rgb(230, 230, 230);
+            max-width: 86%;
+            margin: 50px auto;
+            padding: 10px 10px 20px 10px;
             border-radius: 10px;
             border: 1px solid rgb(141 145 168);;
         }
         ._container h1{
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 30px;
+            margin: 20px 0px 30px 0px;
+            font-size: 24px;
         }
         .container{
             background-color: white;
@@ -67,42 +69,79 @@
             margin: 10px 20px;
         }
 
-
+        footer{
+            text-align: center;
+            background-color: #028541;
+            margin: 0%;
+            padding: 20px;
+        }
+        footer p{
+            margin-top: 10px;
+            color: white;
+        }
 
     </style>
 </head>
 <body>
     <header>
-        <h1>VAGAS ABERTAS PRA PQP!</h1>
+        <h1>VAGAS ABERTAS PRA HOME OFFICE!</h1>
         <p>ATENÇÃO!</p>
         <p>SUA MÃE CONTRATA COM URGÊNCIA!!!</p>
         <br>
-        <p><strong>Estamos contratando com ou sem experiência, salário de R$1,00 a R$4,00!</strong></p>
+        <p><strong>Estamos contratando com ou sem experiência, salário de R$1.200 a R$3.050!</strong></p>
         
         <br>
-        <p>São 2 VAGAS para todo Brasil!</p>
+        <p>São 22 VAGAS para todo Brasil!</p>
         
         <br>
-        <p>Apenas par maiores de 16 Anos!</p>
+        <p>Apenas para maiores de 16 Anos!</p>
     </header>
 
     <main>
         <div class="_container">
             <h1>Qual a vaga desejada?</h1>
             <div class="container" onclick="vaga()">
-                <p>Vaga tal tal tal</p>
+                <span>
+                    <p>Telemarketing Ativo - Home Office</p>
+                    <p style="font-size: 12px;">Salário R$2.150,00</p>
+                </span>
                 <img src="img/seta.png" alt="">
             </div>
             <div class="container" onclick="vaga()">
-                <p>Vaga tal tal tal</p>
+                <span>
+                    <p>Editor de imagens - Home Office</p>
+                    <p style="font-size: 12px;">Salário R$1.500,00</p>
+                </span>
                 <img src="img/seta.png" alt="">
             </div>
             <div class="container" onclick="vaga()">
-                <p>Vaga tal tal tal</p>
+                <span>
+                    <p>Vendedor(a) - Home Office</p>
+                    <p style="font-size: 12px;">Salário R$1.200,00</p>
+                </span>
+                <img src="img/seta.png" alt="">
+            </div>
+            <div class="container" onclick="vaga()">
+                <span>
+                    <p>Assistente de E-commerce</p>
+                    <p style="font-size: 12px;">Salário R$2.100,00</p>
+                </span>
+                <img src="img/seta.png" alt="">
+            </div>
+            <div class="container" onclick="vaga()">
+                <span>
+                    <p>Gerente Comercial - Home Office</p>
+                    <p style="font-size: 12px;">Salário R$1.200,00</p>
+                </span>
                 <img src="img/seta.png" alt="">
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>Terms & Conditions - Privacy Policy - Cookies</p>
+        <p>© 2022 - Empregotrue.</p>
+    </footer>
 
 
     <script>
