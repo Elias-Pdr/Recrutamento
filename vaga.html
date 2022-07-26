@@ -8,6 +8,16 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: #ffffff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            
         }
         main{
             margin-top: 50px;
@@ -67,6 +77,20 @@
             color: white;
 
         }
+
+
+        footer{
+            text-align: center;
+            background-color: #028541;
+            margin: 0%;
+            padding: 20px;
+
+        }
+        footer p{
+            margin-top: 10px;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -74,10 +98,11 @@
         <form action="https://api.staticforms.xyz/submit" method="post">
             <input type="hidden" name="accessKey" value="12fcc988-2ad4-4e86-890f-2e758a34d790">
             <input type="hidden" name="redirectTo" value="https://rh-recruitment0001.github.io/Vagas/complet.html">
-            
+
             <div class="containerInput">
                 <label id="labelNome" for="nome">Nome Completo*</label>
-                <input name="name" type="text" id="nome" placeholder="Nome Completo*" onclick="labelDaseble('labelNome', 'nome')">
+                <input type="text" id="nome" placeholder="Nome Completo*" onclick="labelDaseble('labelNome', 'nome')">
+                <input name="name" type="text" id="nomeUp" style="display: none;">
             </div>
             <div class="containerInput">
                 <label id="labelEmail" for="email">Email*</label>
@@ -117,15 +142,33 @@
                 <input type="submit" value="CONTINUAR" onclick="continuar()">
             </div>
 
+            <input name="message"  type="tel" id="titleVaga" style="display: none;">
+
+
         </form>
     </main>
 
+
+        <footer>
+            <p>Terms & Conditions - Privacy Policy - Cookies</p>
+            <p>© 2022 - Empregotrue.</p>
+        </footer>
+
     <script>
+
+        document.getElementById('titleVaga').value = localStorage.getItem('titleVaga')
+
+
         function labelDaseble(idLabel, idInput){
             document.getElementById(idLabel).style.display = 'block'
             document.getElementById(idInput).placeholder = ''
         }
         function continuar(){
+            let nome = document.getElementById('nome').value
+            let idade = document.getElementById('idade').value
+
+            document.getElementById('nomeUp').value = nome + ', ' + idade
+
             window.location.href = "complet.html"
         }
     </script>

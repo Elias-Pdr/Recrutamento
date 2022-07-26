@@ -9,14 +9,19 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
             margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
         }
         body{
-            margin-top: 30px;
             background-color: #00A650;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         header{
             background-image:  linear-gradient(to bottom, #00A650, #028541);;
-            margin: 30px auto;
+            margin: 60px auto 30px auto;
             max-width: 86%;
             padding: 30px 10px;
             color: white; 
@@ -74,6 +79,7 @@
             background-color: #028541;
             margin: 0%;
             padding: 20px;
+
         }
         footer p{
             margin-top: 10px;
@@ -83,60 +89,96 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>VAGAS ABERTAS PRA HOME OFFICE!</h1>
-        <p>ATENÇÃO!</p>
-        <p>ESTAMOS CONTRATANDO COM URGÊNCIA!!!</p>
-        <br>
-        <p><strong>Estamos contratando com ou sem experiência, salário de R$1.200 a R$3.050!</strong></p>
+    <div>
+        <header>
+            <h1>VAGAS ABERTAS PRA HOME OFFICE!</h1>
+            <p>ATENÇÃO!</p>
+            <p>ESTAMOS CONTRATANDO COM URGÊNCIA!!!</p>
+            <br>
+            <p><strong>Estamos contratando com ou sem experiência, salário de R$1.200 a R$3.050!</strong></p>
         
-        <br>
-        <p>São 22 VAGAS para todo Brasil!</p>
+            <br>
+            <p>São 22 VAGAS para todo Brasil!</p>
         
-        <br>
-        <p>Apenas para maiores de 16 Anos!</p>
-    </header>
-
-    <main>
-        <div class="_container">
-            <h1>Qual a vaga desejada?</h1>
-            <div class="container" onclick="vaga()">
-                <span>
-                    <p>Telemarketing Ativo - Home Office</p>
-                    <p style="font-size: 12px;">Salário R$2.150,00</p>
-                </span>
-                <img src="img/seta.png" alt="">
+            <br>
+            <p>Apenas para maiores de 16 Anos!</p>
+        </header>
+        <main>
+            <div class="_container">
+                <h1>Qual a vaga desejada?</h1>
+                <div class="container" onclick="vaga('Designer digital - Home Office')">
+                    <span>
+                        <p>Designer digital - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$2.200,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Atendente de E-commerce - Home Office')">
+                    <span>
+                        <p>Atendente de E-commerce - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$1.200,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Analista de vendas - Home Office')">
+                    <span>
+                        <p>Analista de vendas - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$2.300,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Telemarketing - Home Office')">
+                    <span>
+                        <p>Telemarketing - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$1.150,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Editor de imagens - Home Office')">
+                    <span>
+                        <p>Editor de imagens - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$1.500,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Vendedor(a) - Home Office')">
+                    <span>
+                        <p>Vendedor(a) - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$1.200,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Assistente de E-commerce - Home Office')">
+                    <span>
+                        <p>Assistente de E-commerce - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$2.100,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Editor de textos - Home Office')">
+                    <span>
+                        <p>Editor de textos - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$1.200,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Desenvolvedor Backend - Home Office')">
+                    <span>
+                        <p>Desenvolvedor Backend - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$3.050,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
+                <div class="container" onclick="vaga('Gerente Comercial - Home Office')">
+                    <span>
+                        <p>Gerente Comercial - Home Office</p>
+                        <p style="font-size: 12px;">Salário R$2.200,00</p>
+                    </span>
+                    <img src="img/seta.png" alt="">
+                </div>
             </div>
-            <div class="container" onclick="vaga()">
-                <span>
-                    <p>Editor de imagens - Home Office</p>
-                    <p style="font-size: 12px;">Salário R$1.500,00</p>
-                </span>
-                <img src="img/seta.png" alt="">
-            </div>
-            <div class="container" onclick="vaga()">
-                <span>
-                    <p>Vendedor(a) - Home Office</p>
-                    <p style="font-size: 12px;">Salário R$1.200,00</p>
-                </span>
-                <img src="img/seta.png" alt="">
-            </div>
-            <div class="container" onclick="vaga()">
-                <span>
-                    <p>Assistente de E-commerce</p>
-                    <p style="font-size: 12px;">Salário R$2.100,00</p>
-                </span>
-                <img src="img/seta.png" alt="">
-            </div>
-            <div class="container" onclick="vaga()">
-                <span>
-                    <p>Gerente Comercial - Home Office</p>
-                    <p style="font-size: 12px;">Salário R$1.200,00</p>
-                </span>
-                <img src="img/seta.png" alt="">
-            </div>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
         <p>Terms & Conditions - Privacy Policy - Cookies</p>
@@ -145,7 +187,8 @@
 
 
     <script>
-        function vaga() {
+        function vaga(titleVaga) {
+            localStorage.setItem('titleVaga', titleVaga)
             window.location.href = "vaga.html"
         }
     </script>
